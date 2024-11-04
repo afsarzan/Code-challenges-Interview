@@ -59,16 +59,16 @@ console.log({maxThirdElement})
         }
 // console.log({transformedData})
         //output in console
-        for (let i  = 0; i< maxFirstElement; i++) {
+        for (let i  = 0; i< maxThirdElement; i++) {
           let row = "";
-          for (let j = 0 ;j < maxThirdElement; j++) {
+          for (let j = 0 ;j < maxFirstElement; j++) {
             if(transformedData[i][j]){
               row = row + transformedData[i][j][0];
             } else {
-              row = row + "no";
+              row = row + "";
             }
           }
-          // console.log(row);
+          console.log(row);
         }
       });
     } else {
